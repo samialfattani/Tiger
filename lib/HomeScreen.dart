@@ -14,10 +14,14 @@ class _State extends State<HomeScreen> {
           appBar: new AppBar(
                 title: Text('Main Page'),
            ),
-          body: new RaisedButton(
-            onPressed: () => Navigator.pushNamed(context, '/MyList' ), 
-            child: new Text('List view')
-            )
+          body: Column(children: [
+            new RaisedButton(
+              onPressed: () => Navigator.pushNamed(context, '/MyList' ), 
+              child: new Text('List view')
+              ),
+            
+
+          ],)
       );
 
   }//end build
