@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'list_with_stateless.dart';
 import 'HomeScreen.dart';
 import 'color_changer.dart';
+import 'register.dart';
+
 void main() =>  runApp(MyApp());
 
 class MyApp extends StatelessWidget 
@@ -19,6 +21,7 @@ class MyApp extends StatelessWidget
         '/MyList': (BuildContext context) => new MyList(),
         '/ButtomBar':(BuildContext context) => new MyList(),
         '/ColorChanger':(BuildContext context) => new ColorChanger(),
+        '/Register':(BuildContext context) => new InnerHome(),
       },
     ); 
   } // Widget
