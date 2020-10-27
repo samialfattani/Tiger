@@ -27,6 +27,10 @@ class _State extends State<HomeScreen> {
               onPressed: () => Navigator.pushNamed(context, '/Register' ), //by yazeed
               child: new Text('Register')
               ),  
+            new RaisedButton(
+              onPressed: () => Navigator.pushNamed(context, '/imageView' ), //by Sami
+              child: new Text('Image View')
+              ),  
             
 
           ],)

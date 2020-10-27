@@ -69,7 +69,8 @@ class InnerHome extends StatelessWidget {
   }
 }
 
-class SignUp extends StatelessWidget {
+class SignUp extends StatelessWidget 
+{
   
   bool isSwitched = false;
   @override
