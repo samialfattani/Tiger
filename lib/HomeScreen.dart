@@ -24,14 +24,22 @@ class _State extends State<HomeScreen> {
               child: new Text('Color Changer')
               ),  
             new RaisedButton(
-              onPressed: () => Navigator.pushNamed(context, '/Register' ), //by yazeed
+              onPressed: () => Navigator.pushNamed(context, '/register' ), //by yazeed
               child: new Text('Register')
               ),  
             new RaisedButton(
               onPressed: () => Navigator.pushNamed(context, '/imageView' ), //by Sami
               child: new Text('Image View')
               ),  
-            
+            new RaisedButton(
+              onPressed: () => Navigator.pushNamed(context, '/inputs' ), //by yazeed
+              child: new Text('inputs')
+              ),  
+              new RaisedButton(
+              onPressed: () => Navigator.pushNamed(context, '/mydrawer' ), //by yazeed
+              child: new Text('mydrawer')
+              ),
+              
 
           ],)
       );

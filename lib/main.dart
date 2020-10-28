@@ -1,10 +1,12 @@
 
+import 'package:first_mapp/register.dart';
 import 'package:flutter/material.dart';
 import 'list_with_stateless.dart';
 import 'HomeScreen.dart';
 import 'color_changer.dart';
-import 'register.dart';
+import 'mydrawer.dart';
 import 'image_view.dart';
+import 'inputs.dart';
 
 void main() =>  runApp(MyApp());
 
@@ -22,8 +24,10 @@ class MyApp extends StatelessWidget
         '/MyList': (BuildContext context) => new MyList(),
         '/ButtomBar':(BuildContext context) => new MyList(),
         '/ColorChanger':(BuildContext context) => new ColorChanger(),
-        '/Register':(BuildContext context) => new InnerHome(),
+        '/mydrawer':(BuildContext context) => new MyDrawer(),
         '/imageView':(BuildContext context) => new ImageView(),
+        '/inputs':(BuildContext context) => new Inputs(),
+        '/register':(BuildContext context) => new SignUp(),
       },
     ); 
   } // Widget
