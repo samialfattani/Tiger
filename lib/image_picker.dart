@@ -1,21 +1,27 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 class ImagePicker extends StatefulWidget {
   @override
-  ColorState createState() => ColorState();
+  _State createState() => _State();
 }
 
-class ColorState extends State<ImagePicker> 
+class _State extends State<ImagePicker> 
 {
-  PickedFile myimage = null;
-  pickImageFromStudio() async 
-  {
-    //PickedFile img = await ImagePicker().getImage(source: ImageSource.gallery);
-    // setState(() {
-    //   myimage = img;
-    // });
+  final picker = ImagePicker();
 
+  Future getImage() async 
+  {
+    final pickedFile = await picker.getImage(source: ImageSource.gallery);
+
+    setState(() {
+      if (pickedFile != null) {
+      } else {
+        print('No image selected.');
+      }
+    });
+  }
 
 
   @override
@@ -25,7 +31,7 @@ class ColorState extends State<ImagePicker>
           body: new Column(
             children: [
               new Container(child: null ),
-              new RaisedButton(child: Text('take'), onPressed: pickImageFromStudio)
+              new RaisedButton(child: Text('take'), onPressed: getImage)
 
             ],
           )
