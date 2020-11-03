@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 
-class Alerts extends StatefulWidget {
-
-  final String title;
+class Alerts extends StatefulWidget 
+{
+  final String title='';
 
   @override
   _AlertState createState() => _AlertState();
 }
 
-class _AlertState extends State<ColorChanger> {
+class _AlertState extends State<Alerts> {
   
   int _counter = 0;
 
