@@ -40,8 +40,12 @@ class _State extends State<HomeScreen> {
               child: new Text('mydrawer')
               ),
               new RaisedButton(
-              onPressed: () => Navigator.pushNamed(context, '/Alerts' ), //by khalid maddah
+              onPressed: () => Navigator.pushNamed(context, '/alerts' ), //by khalid maddah
               child: new Text('Alerts')
+              ),
+              new RaisedButton(
+              onPressed: () => Navigator.pushNamed(context, '/img_picker' ), //by khalid maddah
+              child: new Text('Image Picker')
               ),
               
 

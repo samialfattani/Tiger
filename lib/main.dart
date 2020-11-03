@@ -7,6 +7,8 @@ import 'color_changer.dart';
 import 'mydrawer.dart';
 import 'image_view.dart';
 import 'inputs.dart';
+import 'alerts.dart';
+import 'image_picker.dart';
 
 void main() =>  runApp(MyApp());
 
@@ -28,6 +30,8 @@ class MyApp extends StatelessWidget
         '/imageView':(BuildContext context) => new ImageView(),
         '/inputs':(BuildContext context) => new Inputs(),
         '/register':(BuildContext context) => new SignUp(),
+        '/alerts':(BuildContext context) => new Alerts(),
+        '/img_picker':(BuildContext context) => new ImagePicker(),
       },
     ); 
   } // Widget
